@@ -101,6 +101,13 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
 
+  // first element is the sum of the numbers in the array
+
+var firstElement = sum(testArray);
+console.log(firstElement);
+
+  // the second element is a string that EXACTLY follows
+
 }
 
 // Here is the test for sumArray(); uncomment it to run it
