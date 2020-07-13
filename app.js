@@ -103,12 +103,28 @@ function sumArray(sumArr) { //eslint-disable-line
 
   // first element is the sum of the numbers in the array
 
-var firstElement = sum(testArray);
-console.log(firstElement);
+var firstElementIndexP0 = parseInt(testArray[0]);
+var firstElementIndexP1 = parseInt(testArray[1]);
+var firstElementIndexP2 = parseInt(testArray[2]);
+  // console.log(firstElementIndexP0 + ',' + firstElementIndexP1 + ',' + firstElementIndexP2 );
+  var sumFirstElement = (testArray.reduce)(function(a, b){
+    console.log('Value of sumFirstElement ' + sumFirstElement);
+  // var sumThisArray = parseInt(sumFirstElement);
+  // console.log('value of sumThisArray  ' + sumThisArray);
+  //  console.log(typeof sumThisArray + ' =  type of sumThisArray');
+  return a + b;        
+  
+}, 0);
+
+// var sumFirstElement = sum[firstElementIndexP0, firstElementIndexP1, firstElementIndexP2];
+// console.log('The sum = ' + sumFirstElement);
+  }
+
+sumArray(testArray);
 
   // the second element is a string that EXACTLY follows
 
-}
+
 
 // Here is the test for sumArray(); uncomment it to run it
 
